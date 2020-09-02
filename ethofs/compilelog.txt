@@ -1,0 +1,133 @@
+Compiling ./contracts/Migrations.sol...
+Compiling ./contracts/ethoFSController.sol...
+Compiling ./contracts/ethoFSDashboard.sol...
+Compiling ./contracts/ethoFSHostingContracts.sol...
+
+Compilation warnings encountered:
+
+/home/ether1node/contracts/ethofs/contracts/ethoFSController.sol:2:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:22:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function ethoFSDashboard () public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:25:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function HostingContract (string HostingContractName, address UserAddress, uint256 ContractCost, uint256 ExpirationBlockHeight) public payable{
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:78:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function ethoFSHostingContracts () public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:84:16: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        while (keccak256(userAccounts[UserAddress].hostingContractAddresses[i]) != keccak256(HostingContactAddress)) {
+               ^--------------------------------------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:84:16: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        while (keccak256(userAccounts[UserAddress].hostingContractAddresses[i]) != keccak256(HostingContactAddress)) {
+               ^--------------------------------------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:84:84: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        while (keccak256(userAccounts[UserAddress].hostingContractAddresses[i]) != keccak256(HostingContactAddress)) {
+                                                                                   ^------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:84:84: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        while (keccak256(userAccounts[UserAddress].hostingContractAddresses[i]) != keccak256(HostingContactAddress)) {
+                                                                                   ^------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:91:16: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        while (keccak256(userAccountAddresses[i]) != keccak256(UserAddress)) {
+               ^--------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:91:16: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        while (keccak256(userAccountAddresses[i]) != keccak256(UserAddress)) {
+               ^--------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:91:54: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        while (keccak256(userAccountAddresses[i]) != keccak256(UserAddress)) {
+                                                     ^--------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:91:54: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        while (keccak256(userAccountAddresses[i]) != keccak256(UserAddress)) {
+                                                     ^--------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:7:47: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            AccountCollectionAddress.transfer(this.balance);
+                                              ^----------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:9:130: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            uint256 collectAmount = ((block.number - deploymentBlockHeight) / (expirationBlockHeight - deploymentBlockHeight)) * this.balance; 
+                                                                                                                                 ^----------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:11:31: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            operator.transfer(this.balance);
+                              ^----------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:181:16: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        while (keccak256(hostingContractArray[i]) != keccak256(HostingContactAddress)) {
+               ^--------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:181:16: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        while (keccak256(hostingContractArray[i]) != keccak256(HostingContactAddress)) {
+               ^--------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:181:54: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        while (keccak256(hostingContractArray[i]) != keccak256(HostingContactAddress)) {
+                                                     ^------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:181:54: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        while (keccak256(hostingContractArray[i]) != keccak256(HostingContactAddress)) {
+                                                     ^------------------------------^
+
+
+/home/ether1node/contracts/ethofs/contracts/ethoFSController.sol:2:1: Warning: Experimental features are turned on. Do not use experimental features on live deployments.
+pragma experimental ABIEncoderV2;
+^-------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:22:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function ethoFSDashboard () public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:25:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function HostingContract (string HostingContractName, address UserAddress, uint256 ContractCost, uint256 ExpirationBlockHeight) public payable{
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:78:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use "constructor(...) { ... }" instead.
+    function ethoFSHostingContracts () public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,/home/ether1node/contracts/ethofs/contracts/ethoFSController.sol:55:29: TypeError: Type address is not implicitly convertible to expected type contract PinStorage.
+        PinStorageAddress = pinStorageAddress;
+                            ^---------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSController.sol:56:34: TypeError: Type address is not implicitly convertible to expected type contract ethoFSDashboard.
+        EthoFSDashboardAddress = ethoFSDashboardAddress;
+                                 ^--------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSController.sol:57:41: TypeError: Type address is not implicitly convertible to expected type contract ethoFSHostingContracts.
+        EthoFSHostingContractsAddress = ethoFSHostingContractsAddress;
+                                        ^---------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:84:16: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        while (keccak256(userAccounts[UserAddress].hostingContractAddresses[i]) != keccak256(HostingContactAddress)) {
+               ^--------------------------------------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:84:16: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        while (keccak256(userAccounts[UserAddress].hostingContractAddresses[i]) != keccak256(HostingContactAddress)) {
+               ^--------------------------------------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:84:84: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        while (keccak256(userAccounts[UserAddress].hostingContractAddresses[i]) != keccak256(HostingContactAddress)) {
+                                                                                   ^------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:84:84: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        while (keccak256(userAccounts[UserAddress].hostingContractAddresses[i]) != keccak256(HostingContactAddress)) {
+                                                                                   ^------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:91:16: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        while (keccak256(userAccountAddresses[i]) != keccak256(UserAddress)) {
+               ^--------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:91:16: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        while (keccak256(userAccountAddresses[i]) != keccak256(UserAddress)) {
+               ^--------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:91:54: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        while (keccak256(userAccountAddresses[i]) != keccak256(UserAddress)) {
+                                                     ^--------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSDashboard.sol:91:54: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        while (keccak256(userAccountAddresses[i]) != keccak256(UserAddress)) {
+                                                     ^--------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:7:47: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            AccountCollectionAddress.transfer(this.balance);
+                                              ^----------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:9:130: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            uint256 collectAmount = ((block.number - deploymentBlockHeight) / (expirationBlockHeight - deploymentBlockHeight)) * this.balance; 
+                                                                                                                                 ^----------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:11:31: Warning: Using contract member "balance" inherited from the address type is deprecated. Convert the contract to "address" type to access the member, for example use "address(contract).balance" instead.
+            operator.transfer(this.balance);
+                              ^----------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:181:16: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        while (keccak256(hostingContractArray[i]) != keccak256(HostingContactAddress)) {
+               ^--------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:181:16: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        while (keccak256(hostingContractArray[i]) != keccak256(HostingContactAddress)) {
+               ^--------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:181:54: Warning: This function only accepts a single "bytes" argument. Please use "abi.encodePacked(...)" or a similar function to encode the data.
+        while (keccak256(hostingContractArray[i]) != keccak256(HostingContactAddress)) {
+                                                     ^------------------------------^
+,/home/ether1node/contracts/ethofs/contracts/ethoFSHostingContracts.sol:181:54: Warning: The provided argument of type address is not implicitly convertible to expected type bytes memory.
+        while (keccak256(hostingContractArray[i]) != keccak256(HostingContactAddress)) {
+                                                     ^------------------------------^
+[31mCompilation failed. See above.[39m
